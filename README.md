@@ -19,7 +19,7 @@ The goal of this repository is to give you a way to run OpenFHE-Python on your m
 docker compose build
 ```
 
-docker compose build". This command will read compose.yaml, which tells it to build the container described in the openfhe/ directory.
+This command will read compose.yaml, which tells it to build the container described in the openfhe/ directory.
 
 
 ## How it's used
