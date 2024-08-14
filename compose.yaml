@@ -1,0 +1,17 @@
+# This knows how to build our container. It is a Docker Compose file.
+# The Docker Compose application is installed when you install Docker.
+# Run this with "docker compose build".
+services:
+  fhe128mprel:
+    image: openfhe-tutorial
+    build:
+      context: openfhe
+      # platforms:
+      #   - linux/arm64
+      args:
+        BASEIMAGE: "debian:bookworm"
+        OPENFHEBUILD: "Release"
+        NATIVEBIT: "128"
+    volumes:
+      - .:/workspaces
+ 
