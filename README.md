@@ -13,7 +13,14 @@ The goal of this repository is to give you a way to run OpenFHE-Python on your m
 
 1. Download Docker for your computer. On my Mac, it's at docker.com. On Linux, use apt or yum to install Docker and Compose.
 
-2. Ask Docker Compose to build a container for you by running a command in the same directory as this README.md file:
+2. Clone this repository and change directory to this repository.
+
+```
+git clone https://github.com/adolgert/openfhe-tutorial.git
+cd openfhe-tutorial
+```
+
+3. Ask Docker Compose to build a container for you by running a command in the same directory as this README.md file:
 
 ```
 docker compose build
